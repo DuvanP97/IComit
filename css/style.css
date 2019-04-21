@@ -1,0 +1,97 @@
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Raleway:300,400,500,600,700");
+body {
+  background-image: url(../img/slider1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.banner_btn {
+  padding: 0px 38px;
+  line-height: 48px;
+  background: #8B0000;
+  color: #fff;
+  display: inline-block;
+  border: 1px solid #8B0000;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.banner_btn:hover {
+  color: #fff;
+  background: transparent;
+}
+
+.home_banner_area {
+  position: relative;
+}
+
+.swiper-slide.swiper-slide-active .slider_text_inner {
+  left: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+img {
+  width: 100%;
+  height: 600px;
+  opacity:0.0;
+   filter:alpha(opacity=60);
+}
+.slider_text_inner {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+
+.slider_text_inner .slider_text {
+  background: #000;
+  border-radius: 5px;
+  padding: 65px;
+  position: relative;
+}
+
+.slider_text_inner .slider_text:before {
+  content: "";
+  width: 360px;
+  height: 530px;
+  background: rgba(139, 0, 0, 0.8);
+  position: absolute;
+  left: -95px;
+  top: -70px;
+  z-index: -1;
+}
+
+.slider_text_inner .slider_text h2 {
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.slider_text_inner .slider_text p {
+  color: #959595;
+  margin-bottom: 30px;
+}
+
+.slider_text_inner .slider_text .banner_btn {
+  margin-right: 7px;
+}
